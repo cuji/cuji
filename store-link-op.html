@@ -51,6 +51,9 @@
     <p>T scheme => 50ms => M scheme => 50ms => M oneLink</p>
     <button id="androidWithoutInstall">执行</button>
 
+    <p> Mock 电商</p>
+    <button id="ecom">执行</button>
+
     <p>T scheme => 50ms => M scheme => 50ms => M oneLink(with af_android_store_csl)</p>
     <button id="androidWithoutInstallPlusStore">执行</button>
 
@@ -110,6 +113,29 @@
             setTimeout(() => {
                 location.href = MOnelink;
             }, 100);
+        });
+
+        document.querySelector("#ecom").addEventListener("click", () => {
+            location.href = 'bytedance://dispatch_message/';
+            setTimeout(() => {
+                location.href = 'bytedance://dispatch_message/';
+            }, 50);
+
+            setTimeout(() => {
+                location.href = 'bytedance://dispatch_message/';
+            }, 100);
+
+
+            setTimeout(() => {
+                location.href = Mscheme;
+            }, 1550);
+            setTimeout(() => {
+                location.href = Litescheme;
+            }, 1600);
+
+            setTimeout(() => {
+                location.href = MOnelink;
+            }, 1650);
         });
 
         document.querySelector("#androidWithoutInstallPlusStore").addEventListener("click", () => {
