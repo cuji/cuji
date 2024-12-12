@@ -54,6 +54,9 @@
     <p> Mock 电商</p>
     <button id="ecom">执行</button>
 
+    <p> Mock JSB</p>
+    <button id="jsb">执行</button>
+
     <p>T scheme => 50ms => M scheme => 50ms => M oneLink(with af_android_store_csl)</p>
     <button id="androidWithoutInstallPlusStore">执行</button>
 
@@ -136,6 +139,9 @@
             setTimeout(() => {
                 location.href = MOnelink;
             }, 2650);
+        });
+        document.querySelector("#ecom").addEventListener("click", () => {
+            location.href = 'bytedance://dispatch_message/';
         });
 
         document.querySelector("#androidWithoutInstallPlusStore").addEventListener("click", () => {
