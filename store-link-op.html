@@ -51,11 +51,11 @@
     <p>T scheme => 50ms => M scheme => 50ms => M oneLink</p>
     <button id="androidWithoutInstall">执行</button>
 
-    <p> Mock 电商</p>
-    <button id="ecom">执行</button>
+    <!-- <p> Mock 电商</p>
+    <button id="ecom">执行</button> -->
 
-    <p> Mock JSB</p>
-    <button id="jsb">执行</button>
+    <!-- <p> Mock JSB</p>
+    <button id="jsb">执行</button> -->
 
     <p>T scheme => 50ms => M scheme => 50ms => M oneLink(with af_android_store_csl)</p>
     <button id="androidWithoutInstallPlusStore">执行</button>
@@ -106,14 +106,14 @@
         // const MOnelinkWithoutAFDP = `https://go.onelink.me/bIdt?af_adset_id=6825545888413352962_copy&domain_source=tiktok&pid=channelshareh5&jump_time=1652700558366&c=music_7002223274583214854&rid=19854073452700550283&wid=7097181338989561346&_d=secCgwIARCbDRjEFSADKAESPgo8xO9dNIOoALzxsgBtyhrHnZWFpAqzeM78hbr64rQ2BD9iHgGDrQAlyLFmkP+m3VBsRyG344C98DqZOiLvGgA=&action=openapp`;
 
 
-        location.href = 'bytedance://dispatch_message/';
-            setTimeout(() => {
-                location.href = 'bytedance://dispatch_message/';
-            }, 500);
+        // location.href = 'bytedance://dispatch_message/';
+        //     setTimeout(() => {
+        //         location.href = 'bytedance://dispatch_message/';
+        //     }, 500);
 
-            setTimeout(() => {
-                location.href = 'bytedance://dispatch_message/';
-            }, 1000);
+        //     setTimeout(() => {
+        //         location.href = 'bytedance://dispatch_message/';
+        //     }, 1000);
 
 
 
@@ -129,31 +129,31 @@
             }, 100);
         });
 
-        document.querySelector("#ecom").addEventListener("click", () => {
-            location.href = 'bytedance://dispatch_message/';
-            setTimeout(() => {
-                location.href = 'bytedance://dispatch_message/';
-            }, 500);
+        // document.querySelector("#ecom").addEventListener("click", () => {
+        //     location.href = 'bytedance://dispatch_message/';
+        //     setTimeout(() => {
+        //         location.href = 'bytedance://dispatch_message/';
+        //     }, 500);
 
-            setTimeout(() => {
-                location.href = 'bytedance://dispatch_message/';
-            }, 1000);
+        //     setTimeout(() => {
+        //         location.href = 'bytedance://dispatch_message/';
+        //     }, 1000);
 
 
-            setTimeout(() => {
-                location.href = Mscheme;
-            }, 2500);
-            setTimeout(() => {
-                location.href = Litescheme;
-            }, 2600);
+        //     setTimeout(() => {
+        //         location.href = Mscheme;
+        //     }, 2500);
+        //     setTimeout(() => {
+        //         location.href = Litescheme;
+        //     }, 2600);
 
-            setTimeout(() => {
-                location.href = MOnelink;
-            }, 2650);
-        });
-        document.querySelector("#jsb").addEventListener("click", () => {
-            location.href = 'bytedance://dispatch_message/';
-        });
+        //     setTimeout(() => {
+        //         location.href = MOnelink;
+        //     }, 2650);
+        // });
+        // document.querySelector("#jsb").addEventListener("click", () => {
+        //     location.href = 'bytedance://dispatch_message/';
+        // });
 
         document.querySelector("#androidWithoutInstallPlusStore").addEventListener("click", () => {
             location.href = Mscheme;
